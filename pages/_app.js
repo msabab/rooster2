@@ -1,13 +1,13 @@
 import '../styles/globals.css'
 import React from 'react'
+import { AppWrapper } from '../data/context'
 
 function MyApp({ Component, pageProps }) {
-  const AppContext = React.createContext();
 
   return (
-    <AppContext.Provider value={{}}>
+    <AppWrapper>
       <Component {...pageProps} />
-    </AppContext.Provider>
+    </AppWrapper>
   )
 }
 
